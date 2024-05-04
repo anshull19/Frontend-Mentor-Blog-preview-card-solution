@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Figtree', sans-serif;
+}
+
+body {
+  background-color: #F4D04E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body main {
+  width: 380px;
+  height: 515px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px 0px;
+  padding: 18px;
+  margin: 48px auto;
+}
+
+body main .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body main .image-container img {
+  border-radius: 10px;
+}
+
+body main .text-container {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+body main .text-container .category {
+  background-color: #F4D04E;
+  padding: 4px 12px;
+  border-radius: 4px;
+  width: 90px;
+}
+
+body main .text-container .Published-date {
+  font-size:14px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+body main .text-container .title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  transition: color .2s ease-in;
+}
+
+body main .text-container .title {
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+
+body main .text-container .title:hover {
+  color: #F4D04E;
+}
+
+body main .text-container .description {
+  color: #7f7f7f;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+body main .author-container {
+  display: flex;
+  align-items: center;
+}
+
+body main .author-container h2 {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+body main .author-container img {
+  width: 30px;
+}
+
+/* 
+
+
+
+Media Queries
+
+
+
+*/
+
+@media screen and (max-width: 500px) {
+
+  main {
+    width: 90%;
+    margin: 32px auto
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+}
